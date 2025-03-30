@@ -9,8 +9,6 @@ services:
       - ./wp-config.php:/var/www/html/wp-config.php
     ports:
       - "80:80"
-    depends_on:
-      - mysql
 
 networks:
   wp_network:
