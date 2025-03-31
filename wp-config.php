@@ -9,9 +9,11 @@ define('WP_REDIS_PORT', 6379);
 define('WP_REDIS_DATABASE', 0);
 define('WP_CACHE', true);
 
-define('WP_SITEURL', getenv('IP'));
-define('WP_HOME', getenv('IP'));
+#define('WP_SITEURL', getenv('IP'));
+#define('WP_HOME', getenv('IP'));
 
+define('WP_SITEURL', 'http://' . getenv('IP'));
+define('WP_HOME', 'http://' . getenv('IP'));
 
 #define('WP_SITEURL', 'http://localhost/wordpress');
 #define('WP_HOME', 'http://localhost/wordpress');
